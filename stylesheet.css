@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+  font-family: 'Lato', sans-serif;
+}
+#header1 {
+    display: flex;
+    border-bottom: 1px solid #e4e4e4;
+    align-items: center;
+    background-color: #0d0821;
+}
+.logo img {
+    margin-left: 1vw;
+    width: auto;
+    height: 19vh;
+}
+.logo {
+    margin-right: auto;
+}
+.navigation a {
+    padding: 10px 20px;
+    font-size: 27px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.pushpull {
+padding: 5px 0 2px 0;
+position: relative;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-decoration: none;
+background-size: 100% 200%;
+background-image: linear-gradient(to right, #FDD448, #F97A90, #FDD448 50%, #fff 50%);
+background-position: 100% 0%;
+background-size: 200% 100%;
+transition: all .28s ease-out;
+}
+.pushpull:hover {
+background-position: 0% 100%;
+}
+.pushpull:before {
+content: "";
+background: linear-gradient(to right, #FDD448, #F97A90, #FDD448);
+display: block;
+position: absolute;
+bottom: -3px;
+right: 0;
+width: 0;
+height: 3px;
+transition: all .28s ease-out;
+}
+.pushpull:hover::before {
+width: 100%;
+}
+#left {
+  position: absolute;
+  width: 50vw;
+}
+#mpos {
+  margin-left: 27%;
+}
+#left p {
+  margin-left:25%;
+  font-size: large;
+  font-weight:600;
+}
+#features {
+  flex-direction: column;
+}
