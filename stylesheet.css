@@ -8,6 +8,15 @@ body {
 * {
   font-family: 'Lato', sans-serif;
 }
+@media only screen and (max-width: 400px) {
+  #logo {
+    margin-left: 1vw;
+    width: auto;
+    height: 10vh;
+  }
+  .navigation a {
+    display:none;
+}
 #header1 {
     display: flex;
     border-bottom: 1px solid #e4e4e4;
@@ -25,7 +34,6 @@ body {
 .navigation a {
     padding: 10px 20px;
     font-size: 27px;
-    font-family: 'Alegreya Sans', sans-serif;
 }
 .pushpull {
 padding: 5px 0 2px 0;
